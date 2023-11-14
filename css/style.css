@@ -59,7 +59,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s ease-in-out;
+    transition: 0.5s all ease;
+    cursor: pointer;
 }
 .awersome, .picture, .prices, .reviews, .contactus {
     padding: 110px 0 50px 0;
@@ -72,13 +73,16 @@ a {
     color: #FFF;
 }
 .button_primary:hover, .button_second:hover {
-    color: #EC7979;
+    color: white;
     background-color: #EC7979;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    
 }
 .button_primary:active, .button_second:active {
     color: #fff;
     border-color: #AB4949;
     background: #AB4949;
+    
   }
   
   .header-poster {
@@ -340,13 +344,17 @@ font-weight: 600;
 line-height: normal;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 10px;
+transition: all ease 0.5s;
+cursor: pointer;
 }
 button:hover {
     border: 2px solid red;
     background: #AB4949;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
 }
 button:active {
     border: 2px solid red;
+    box-shadow: inset 0px 0px 10px #ab4949;
 }
 .wraper {
     display: flex;
@@ -434,9 +442,10 @@ margin-bottom: 18px;
     display: flex;
     
 }
-[fill]:hover {
-    background-color: #AB4949;
-}
+.symbol:hover path  {
+    fill:  #AB4949;
+    }
+
 
 /*footer*/
 .footer {
@@ -452,7 +461,9 @@ margin-bottom: 18px;
     gap: 33px;
     justify-content: center;
 }
-
+.symbol svg {
+    transition: fill ease 0.4s;
+  }
 .copyright {
 color: rgba(255, 255, 255, 0.50);
 margin-bottom: 27px;
@@ -556,7 +567,13 @@ background-image: url("../image/pic3.svg");
 }
 table {
     width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
     
+}
+table:hover {
+    filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
+    transform: translateY(-20px);
 }
 thead {
  border: 2px solid #F5F5F5;
