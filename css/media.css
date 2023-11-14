@@ -1,0 +1,268 @@
+@media (max-width: 1170px) {
+    .container {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    
+    body {
+        font-size: 14px;
+    }
+    .poster_info {
+        width: 50%;
+    }
+    .poster__form {
+        width: 50%;
+    }
+    .section_title {
+        font-size: 24px;
+    }
+    .poster h1 {
+        font-size: 36px;
+    }
+    
+    .header_logo {
+        position: relative;
+        left: 0px;
+        top: 0px;
+    
+    }
+    .title {
+        font-size: 18px;
+        height: 82px;
+    }
+    .feedback {
+    padding: 50px 20px;
+    }
+}
+ 
+@media (max-width: 900px) {
+    .reviews_block {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        
+    }
+   
+    .reviews_block-item:last-child {
+        grid-column: 1 / span 2;
+        max-width: 50%;
+    }
+    
+    
+}
+@media (max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+    .icons {
+        gap: 17px;
+        padding: 35px 0px 35px 16px;
+        
+    }
+    svg {
+        width: 38px;
+        height: 36px;
+    }
+}
+@media (max-width: 768px) {
+
+    .reviews_block-item {
+        flex-direction: column;
+    }
+    .table-price {
+        flex-direction: column;
+    }
+    
+    .prices_table-item {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+    .hidden-menu{
+        display: block;
+    }
+.header {
+    height: 56px;
+    display: flex;
+}
+.header .container {
+    
+    padding: 20px;
+}
+}
+
+ @media (max-width: 480px) {
+.container {
+     width: 100%;
+   flex-direction: column;       
+            
+     }
+ .header .container {
+    flex-direction: row;
+    position: relative;
+}
+nav {
+    width: 100%;
+}
+/*.menu_link {
+    width: 100%;
+    
+}*/
+.poster__info-logo {
+    display: none;
+}
+.poster_info {
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+.poster {
+    height: fit-content;
+    
+}
+.poster h1 {
+    padding-top: 64px;
+    font-size: 36px;
+    text-align: center;
+}
+.poster p {
+    text-align: center;
+    max-width: 100%;
+    
+}
+.button_primary, .button_second {
+    margin: 0 auto;
+    width: 100%;
+    
+}
+.poster__form {
+     width: 100%;    
+     
+}
+.form_title {
+    font-size: 14px;
+    height: 50px;
+    
+}
+.fio, .email, .password {
+    margin-bottom: 50px;
+    
+}
+.input_title {
+    width: 100%;
+}
+.media {
+    width: 100%;
+    text-align: center;
+}
+.icons {
+    gap: 17px;
+    padding: 35px 0px 35px 16px; 
+}
+svg {
+    width: 28px;
+    height: 26px;
+}
+.awersome_item{
+    flex-direction: column;
+    
+   }
+ .item_block {
+    width: 100%;
+   justify-content: center;
+    }
+.prices_table {
+    flex-direction: column;
+       
+    }
+.prices_table-item {
+    margin-bottom: 27px; 
+        
+    }
+.awersome, .picture, .prices, .reviews, .contactus {
+     padding: 40px 0 50px 0;
+    text-align: center;
+    }
+
+.reviews_block {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    max-width: 100%;
+    
+}
+
+.reviews_block-item:last-child {
+    grid-column: 1;
+    max-width: 100%;
+}  
+.wraper {
+    flex-direction: column;
+}
+.section.reviews {
+    padding-top: 10px;
+}
+.feedback {
+    margin-bottom: 40px;
+}
+.input_contact {
+    width: 100%;
+}
+.textarea {
+    width: 100%;
+}
+.message_block {
+    margin-left: 20px;
+    height: 200px;
+}
+.form_info {
+    padding: 0 20px;
+}
+.icons-footer {
+    padding: 35px 0px 28px 0;
+    display: flex;
+    gap: 17px;
+    justify-content: space-between;
+}
+footer {
+    width: 100%;
+}
+.last {
+        
+    width: 100%; 
+   }
+.separator {
+    margin: 0 auto;
+    
+   }
+.picture {
+    width: 100%;
+
+   }
+.photo_jaydon {
+    margin-bottom: 20px;
+}
+.section_title {
+    margin-bottom: 45px;
+}
+.section_devider {
+    margin-bottom: 20px;
+}
+.section_descr {
+    margin-bottom: 40px;
+}
+}
+
+@media (max-width: 320px) {
+.header__toggle-menu{
+    height: 50vh;
+    
+    width: 100%;
+   
+}
+}
