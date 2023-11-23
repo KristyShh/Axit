@@ -8,15 +8,38 @@
     body {
         font-size: 14px;
     }
+    .header_logo {
+        margin-left: 115px;
+    }
     .poster_info {
         width: 50%;
+        margin-left: 115px;
     }
     .poster__form {
-        width: 50%;
+        width: 40%;
+    }
+    .button_primary {
+        width: 183px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .media_text {
+        font-size: 14px;
+    }
+    .icon svg {
+        width: 53px;
+        height: 53px;
+       
+    }
+    .media {
+        width: 40%;
     }
     .section_title {
         font-size: 24px;
+        margin-bottom: 35px;
     }
+   
     .poster h1 {
         font-size: 36px;
     }
@@ -34,6 +57,21 @@
     .feedback {
     padding: 50px 20px;
     }
+    .picture {
+        padding: 100px 0 60px;
+    }
+}
+@media (max-width: 960px) {
+    .header_logo {
+      margin-left: 10px;
+    }
+    .poster_info {
+      margin-left: 10px;
+      width: 60%;
+    }
+    .poster__form {
+        width: 398px;
+    }
 }
  
 @media (max-width: 900px) {
@@ -47,6 +85,7 @@
         grid-column: 1 / span 2;
         max-width: 50%;
     }
+   
     
     
 }
@@ -65,6 +104,14 @@
     }
 }
 @media (max-width: 768px) {
+    .awersome,
+    .prices,
+    .reviews,
+    .picture,
+    .contactus {
+      padding: 75px 0 55px;
+    }
+
 
     .reviews_block-item {
         flex-direction: column;
@@ -73,35 +120,115 @@
         flex-direction: column;
     }
     
-    .prices_table-item {
-        width: 100%;
+    
+    .awersome_item, .prices_table {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     }
+    .item_block, .prices_table-item {
+    width: calc(50% - 15px);
+    }
+    .section_title {
+        margin-bottom: 25px;
+    }
+    .section_descr {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+    .section_header {
+        margin-bottom: 40px;
+    }
+    .prices_table-item:nth-child(2) {
+        bottom: 0;
+    }
+   .footer {
+    height: 134px;
+   }
 
 }
 
 
 @media (max-width: 650px) {
+    
     .menu {
         display: none;
     }
     .hidden-menu{
         display: block;
     }
-.header {
-    height: 56px;
-    display: flex;
-}
+
 .header .container {
     
     padding: 20px;
 }
+.poster {
+    min-height: 1005px;
+    padding: 107px 0 80px;
 }
+.poster .container {
+
+     flex-direction: column;
+      text-align: center;
+     align-items: center;
+    justify-content: center;
+    
+}
+.poster__info-logo {
+    display: none;
+}
+.poster_info {
+    width: 90%;
+}
+.poster .separator {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.button_primary {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+.poster__form {
+    margin-bottom: 50px;
+}
+.socialmedia .container {
+    flex-direction: column;
+}
+.media {
+    width: 100%;
+    text-align: center;
+}
+.media_text {
+    font-size: 13px;
+    margin-bottom: 0;
+}
+.feedback {
+    padding: 38px 30px;
+    font-size: 12px;
+}
+.button_second {
+    width: 288px;
+}
+.button {
+    font-size: 16px;
+    padding: 11px 0;
+}
+.section_descr {
+    font-size: 13px;
+}
+}
+
+
 
  @media (max-width: 480px) {
 .container {
-     width: 100%;
+     width: 480px;
    flex-direction: column;       
             
+     }
+     .poster h1 {
+        padding-top: 0;
      }
  .header .container {
     flex-direction: row;
@@ -110,39 +237,27 @@
 nav {
     width: 100%;
 }
-/*.menu_link {
+.menu_link {
     width: 100%;
     
-}*/
-.poster__info-logo {
-    display: none;
 }
+
 .poster_info {
     width: 100%;
     margin-bottom: 50px;
     
 }
-.poster {
-    height: fit-content;
-    
+.separator {
+    margin-bottom: 25px;
 }
-.poster h1 {
-    padding-top: 64px;
-    font-size: 36px;
-    text-align: center;
-}
-.poster p {
-    text-align: center;
-    max-width: 100%;
-    
-}
+ 
 .button_primary, .button_second {
     margin: 0 auto;
-    width: 100%;
+    
     
 }
 .poster__form {
-     width: 100%;    
+     width: 70%;    
      
 }
 .form_title {
@@ -150,37 +265,30 @@ nav {
     height: 50px;
     
 }
-.fio, .email, .password {
-    margin-bottom: 50px;
+.formitem {
+    margin-bottom: 40px;
     
 }
 .input_title {
     width: 100%;
+    margin-bottom: 10px;
 }
-.media {
-    width: 100%;
-    text-align: center;
-}
+
 .icons {
     gap: 17px;
-    padding: 35px 0px 35px 16px; 
+    padding: 25px 0px 25px 16px; 
 }
-svg {
-    width: 28px;
-    height: 26px;
+.icon svg {
+    display: block;
+    width: 43px;
+    height: 43px;
 }
-.awersome_item{
-    flex-direction: column;
-    
-   }
- .item_block {
-    width: 100%;
-   justify-content: center;
+
+ .item_block, .prices_table-item {
+    width: 80%;
     }
-.prices_table {
-    flex-direction: column;
-       
-    }
+
+
 .prices_table-item {
     margin-bottom: 27px; 
         
@@ -192,9 +300,13 @@ svg {
 
 .reviews_block {
     grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
-    max-width: 100%;
+    max-width: 80%;
+  
+    margin: 0 auto;
     
+}
+.section_title {
+    margin-bottom: 25px;
 }
 
 .reviews_block-item:last-child {
@@ -217,33 +329,18 @@ svg {
     width: 100%;
 }
 .message_block {
-    margin-left: 20px;
+    margin-left: 30px;
     height: 200px;
 }
-.form_info {
-    padding: 0 20px;
-}
+
 .icons-footer {
     padding: 35px 0px 28px 0;
     display: flex;
     gap: 17px;
     justify-content: space-between;
 }
-footer {
-    width: 100%;
-}
-.last {
-        
-    width: 100%; 
-   }
-.separator {
-    margin: 0 auto;
-    
-   }
-.picture {
-    width: 100%;
 
-   }
+
 .photo_jaydon {
     margin-bottom: 20px;
 }
@@ -253,16 +350,50 @@ footer {
 .section_devider {
     margin-bottom: 20px;
 }
-.section_descr {
-    margin-bottom: 40px;
-}
+
 }
 
 @media (max-width: 320px) {
+    .container {
+        width: 320px;
+    }
 .header__toggle-menu{
     height: 50vh;
     
     width: 100%;
    
+}
+.poster__form {
+    width: 100%;
+}
+.media {
+    padding: 25px 0;
+    
+}
+.icons {
+    padding: 5px 0px 25px;
+}
+.icon svg {
+    width: 25px;
+    height: 25px;
+}
+.awersome, .picture, .prices, .reviews, .contactus {
+    padding: 70px 0 50px 0;
+}
+.title {
+    height: 40px;
+}
+.name {
+    margin-bottom: 25px;
+}
+.symbol svg {
+    width: 25px;
+    height: 27px;
+}
+.icons-footer {
+    justify-content:center;
+}
+.last {
+    width: 90%;
 }
 }

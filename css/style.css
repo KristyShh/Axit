@@ -75,13 +75,14 @@ a {
 .button_primary:hover, .button_second:hover {
     color: white;
     background-color: #EC7979;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    transition: 1s;
     
 }
 .button_primary:active, .button_second:active {
     color: #fff;
     border-color: #AB4949;
     background: #AB4949;
+    transition: 1s;
     
   }
   
@@ -91,6 +92,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+   
   }
 
   .header {
@@ -135,10 +137,12 @@ a {
   
   .menu_link:hover {
     background-color: #ec7979;
+    transition: 1s;
   }
   
   .menu_link:active {
     background-color: #ab4949;
+    transition: 1s;
   } 
   /* burger menu*/
   .hidden-menu{
@@ -171,6 +175,7 @@ a {
 }
 .active:hover {
     background-color: #AB4949;
+    transition: 1s;
 }
 
 [type=checkbox]:checked ~ label .lines .line{
@@ -234,6 +239,7 @@ a {
 .poster {
     height: calc(100% - 75px);
     color: #fff;
+    
 }
 
 .poster .container {
@@ -263,7 +269,7 @@ span {
     text-transform: uppercase;
 }
 
-.fio, .email, .password {
+.formitem {
     margin-bottom: 60px;
     
 }
@@ -287,6 +293,7 @@ input {
 .input_contact {
     font-family: "Open Sans", sans-serif;
     width: 100%;
+    
     padding-top: 10px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
@@ -294,6 +301,7 @@ input {
     font-weight: 400;
     padding-bottom: 10px;
 }
+
 .form_info {
     padding: 0 30px;
     width: 100%;
@@ -309,8 +317,12 @@ input {
      padding: 10px;
      
 }
+input:focus,
+textarea:focus { outline:none !important} 
+
 .textarea:focus {
-background-color: #AB4949;
+ box-shadow: 0 0 3px 1px #ec7979;
+transition: 1s;
 }
 .message_block {
     margin-bottom: 60px;
@@ -318,8 +330,9 @@ background-color: #AB4949;
     
 }
     input:focus {
-        background-color: #EC7979;
+        box-shadow: 0 0 3px 1px #ec7979;
         font-size: 18px;
+        transition: 1s;
     }
     .last{
         
@@ -350,11 +363,12 @@ cursor: pointer;
 button:hover {
     border: 2px solid red;
     background: #AB4949;
-    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    transition: 1s;
 }
 button:active {
     border: 2px solid red;
     box-shadow: inset 0px 0px 10px #ab4949;
+    transition: 1s;
 }
 .wraper {
     display: flex;
@@ -380,7 +394,7 @@ button:active {
     margin-bottom: 42px;
   }
   .poster p {
-    max-width: 270px;
+   
     margin-bottom: 42px;
   }
 
@@ -442,8 +456,13 @@ margin-bottom: 18px;
     display: flex;
     
 }
+.icon:hover path  {
+    fill:  #AB4949;
+    transition: 1s;
+    }
 .symbol:hover path  {
     fill:  #AB4949;
+    transition: 1s;
     }
 
 
@@ -574,6 +593,7 @@ table {
 table:hover {
     filter: drop-shadow(0px 4px 10px rgba(51, 51, 51, 0.2));
     transform: translateY(-20px);
+    transition: 1s;
 }
 thead {
  border: 2px solid #F5F5F5;
@@ -685,11 +705,12 @@ position: relative;
  /*picture*/
 
  .picture {
-    height: 442px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../image/bg2.jpg");
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../image/banner_bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
 }
 .title-picture {
     color: #FFF;
